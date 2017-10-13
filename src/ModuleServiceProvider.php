@@ -23,7 +23,7 @@ class ModuleServiceProvider extends ServiceProvider {
      * 
      * Default is `default` or override in config/l5modular.php file
      * 
-     *     'l5modular.theme' => 'theme_name'
+     *     'theme' => 'theme_name'
      *
      *      Path:
      *      app/Themes/{theme-name}/...  
@@ -245,8 +245,6 @@ class ModuleServiceProvider extends ServiceProvider {
         $provider  = app_path() . "/{$subdir}/{$module}/Providers/{$module}ServiceProvider.php";
 
         if ($this->files->exists($provider)) {
-            Log::info($this->rootNamespace());
-            Log::info($this->rootNamespace()."\\".$subdir."\\" . ucfirst($module) . "\\Providers\\".ucfirst($module)."ServiceProvider");
             $this->app->register("\\".app()->getNamespace()."".$subdir."\\" . ucfirst($module) . "\\Providers\\".ucfirst($module)."ServiceProvider");
         }
     }
