@@ -1,0 +1,60 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyRootNamespaceContracts\IModule;
+use DummyRootNamespaceContracts\Installable;
+
+class DummyUCtitlePlugin implements IModule, Installable
+{
+
+    /*
+    |--------------------------------------------------------------------------
+    | IModule Interface 
+    |--------------------------------------------------------------------------
+    |
+    |
+    |
+    |
+    |
+    */
+
+    public $info = [
+        'name'          => 'DummyUCtitle',
+        'description'   => 'DummyUCtitle Module',
+        'version'       => '1.0',
+        'slug'          => 'DummyLCtitle',
+    ];
+
+
+    public function help() : string
+    {
+        return "No help documentation supplied.";
+    }
+
+    public function info() : array
+    {
+        return $this->info;
+    }
+
+    /*
+    |--------------------------------------------------------------------------
+    | Installable Interface
+    |--------------------------------------------------------------------------
+    |
+    |
+    |
+    |
+    |
+    */
+   
+    public function install() : bool
+    {
+        return true;
+    }
+
+    public function uninstall() : bool
+    {
+        return true;
+    }
+}

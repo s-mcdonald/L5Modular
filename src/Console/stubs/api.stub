@@ -1,0 +1,8 @@
+<?php
+
+Route::middleware(['api'])->namespace('DummyNamespace\Controllers')->group( function() {
+    
+    //Route::get('DummyTitle', 'DummyUCtitleController@index')->name('module.index');
+    Route::resource('DummyTitle', 'DummyUCtitleController');
+
+});

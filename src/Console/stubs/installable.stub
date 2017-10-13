@@ -1,0 +1,15 @@
+<?php
+
+namespace DummyNamespace;
+
+/**
+ * 
+ */
+interface Installable
+{
+
+    public function install() : bool;
+
+    public function uninstall() : bool;
+
+}

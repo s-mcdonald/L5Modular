@@ -1,0 +1,28 @@
+<?php
+
+namespace DummyNamespace;
+
+/**
+ * Interface IModule defines the set of methods
+ * a Module must implemement.
+ *
+ */
+interface IModule
+{
+
+
+    public function help() : string;
+
+
+    /**
+     * 
+     * @return array An array of information about 
+     *               the module.
+     *
+     *               icon => 'fa- fa-star',
+     *               name => 'Mymodule',
+     *               slug => 'mymodule',
+     *
+     */
+    public function info() : array;
+}

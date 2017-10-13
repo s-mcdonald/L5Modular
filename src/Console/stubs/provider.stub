@@ -1,0 +1,20 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\ServiceProvider;
+use DummyRootNamespacePlugins\DummyUCtitle\Subscribers\DummyUCtitleSubscriber;
+
+class DummyUCtitleServiceProvider extends ServiceProvider
+{
+    public function __construct()
+    {
+        //Log::info('DummyUCtitleServiceProvider has been loaded');
+    }
+
+    public function boot()
+    {
+        \Event::subscribe(new DummyUCtitleSubscriber());
+    }
+}

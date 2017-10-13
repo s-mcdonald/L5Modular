@@ -1,0 +1,19 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Support\Facades\Log;
+use DummyRootNamespaceEvents\SomeEvent;
+
+class DummyUCtitleSubscriber 
+{
+    public function onEvent(SomeEvent $event)
+    {
+        //
+    }
+
+    public function subscribe($events)
+    {
+        $events->listen('DummyRootNamespaceEvents\SomeEvent', 'DummyRootNamespacePlugins\DummyUCtitle\Subscribers\DummyUCtitleSubscriber@onEvent');
+    }
+}

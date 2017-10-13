@@ -1,0 +1,39 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyRootNamespaceContracts\IModule;
+
+class DummyUCtitleModule implements IModule
+{
+
+    /*
+    |--------------------------------------------------------------------------
+    | IModule Interface 
+    |--------------------------------------------------------------------------
+    |
+    |
+    |
+    |
+    |
+    */
+
+    public $info = [
+        'name'          => 'DummyUCtitle',
+        'description'   => 'DummyUCtitle Module',
+        'version'       => '1.0',
+        'slug'          => 'DummyLCtitle',
+    ];
+
+
+    public function help() : string
+    {
+        return "No help documentation supplied.";
+    }
+
+	public function info() : array
+	{
+		return $this->info;
+	}
+
+}

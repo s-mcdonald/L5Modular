@@ -1,0 +1,31 @@
+{
+    "name": "s-mcdonald/l5-modular",
+    "description": "Modular Generator for Laravel 5",
+    "keywords": ["Sam", "McDonald","tymrcms", "laravel", "modular", "modules", "module", "plugins", "plugin", "structure", "pattern", "Artem", "Schander", "l5modular", "artisan", "generator"],
+    "homepage": "https://github.com/s-mcdonald/L5Modular",
+    "license": "MIT",
+    "version": "1.0.2",
+    "authors": [
+        {
+            "name": "Sam McDonald",
+            "email": "s.mcdonald@outlook.com.au"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "SamMcdonald\\L5Modular\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SamMcdonald\\L5Modular\\ModuleServiceProvider"
+            ]
+        }
+    }    
+}

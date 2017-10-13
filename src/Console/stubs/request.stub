@@ -1,0 +1,28 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Http\Request;
+use Illuminate\Foundation\Http\FormRequest;
+
+class DummyUCtitleRequest extends FormRequest
+{
+    public function authorize()
+    {
+        return true;
+    }
+
+    public function rules()
+    {   
+        if(Request::isMethod('post')) {
+            return [
+                'field'          => 'required|max:100|unique:tablenamme',
+            ];  
+        }
+        
+        return [
+            'field'             => 'sometimes|max:100|unique:tablenamme,id,:id',
+        ];  
+    }
+
+}
