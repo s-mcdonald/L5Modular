@@ -1,6 +1,6 @@
 <?php
 
-namespace SamMcdonald\L5Modular\Console;
+namespace SamMcDonald\L5Modular\Console;
 
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;

@@ -1,6 +1,6 @@
 <?php
 
-namespace SamMcdonald\L5Modular;
+namespace SamMcDonald\L5Modular;
 
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\View;
@@ -53,9 +53,9 @@ class ModuleServiceProvider extends ServiceProvider {
      * @var Array
      */
     protected $commands = [
-        'SamMcdonald\L5Modular\Console\ModuleMakeCommand',
-        'SamMcdonald\L5Modular\Console\PluginMakeCommand',
-        'SamMcdonald\L5Modular\Console\InterfaceMakeCommand'
+        'SamMcDonald\L5Modular\Console\ModuleMakeCommand',
+        'SamMcDonald\L5Modular\Console\PluginMakeCommand',
+        'SamMcDonald\L5Modular\Console\InterfaceMakeCommand'
     ];
 
     /**

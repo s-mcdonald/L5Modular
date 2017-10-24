@@ -17,14 +17,14 @@
     },
     "autoload": {
         "psr-4": {
-            "SamMcdonald\\L5Modular\\": "src/"
+            "SamMcDonald\\L5Modular\\": "src/"
         }
     },
     "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
-                "SamMcdonald\\L5Modular\\ModuleServiceProvider"
+                "SamMcDonald\\L5Modular\\ModuleServiceProvider"
             ]
         }
     }    

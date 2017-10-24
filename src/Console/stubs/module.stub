@@ -31,9 +31,9 @@ class DummyUCtitleModule implements IModule
         return "No help documentation supplied.";
     }
 
-	public function info() : array
-	{
-		return $this->info;
-	}
+    public function info() : array
+    {
+        return $this->info;
+    }
 
 }
